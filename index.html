@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./main.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="sait-header py-1">
+        <div class="container">
+            <div class="wrapper d-flex justify-content-between align-items-center">
+                <div class="sait-header__logo-box">
+                    <a class="" href="https://islom.uz/">
+                        <img class="sait-header__img" src="./imges/logo.svg" alt="sait logo" id="logo">
+                      </a>   
+                </div>
+           <nav class="sait-header__nav nav">
+            <ul class="nav__list d-flex align-items-center gap-5 list-unstyled mb-0">
+                <li class="nav__item"><a class="nav__link" href="#">home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">about</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">new</a></li>
+                <li class="nav__item">
+                    <span class="" id="moon"></span>
+                  <button class="nav__darkmood"><img class="dark__moon" src="./imges/moon.svg" alt="" id="moon-icon"></button> 
+                 
+                </li>
+                
+            </ul>
+           </nav>
+            </div>
+        </div>
+    </header>
+    <main class="sait-mian">
+        <div class="hero">
+            <div class="container">
+                <div class="hero__wrapper p-5 ">
+                    <h1 class="visually-hidden">nomoz vaqtlari</h1>
+                    <div class="hero__new--dates d-flex justify-content-between align-items-center gap-5">
+                         <h2 class="hero__title-region"></h2>
+                        <h3 class="hero__new--date hero__date"></h3>
+                        <p class="hero__new--day hero__full--yaer"></p>
+                    </div>
+                    <div class="hero__data p-3 mb-5">
+                        <form class="hero__form d-flex justify-content-center align-items-center gap-2" action="">
+                            <select class="hero__locaiton--style hero__location w-25 p-2" name="" id="">
+                                <option value="Toshkent">Toshkent</option>
+                                <option value="Qarshi">Qarshi</option>
+                                <option value="Xiva">Xiva</option>
+                                <option value="Namangan">Namangan</option>
+                                <option value="Buxoro">Buxoro</option>
+                                <option value="Samarqand">Samarqand</option>
+                                <option value="Guliston">Guliston</option>
+                                <option value="Andijon">Andijon</option>
+                                <option value="Navoiy">Navoiy</option>
+                                <option value="Nukus">Nukus</option>
+                                <option value="Jizzax">Jizzax</option>
+                                <option value="Qo'qon">Qo'qon</option>
+                            </select>
+                            <select class="hero__date--style hero__select-date w-25 p-2" >
+                                <option value="day">Kunlik</option>
+                                <option value="week">Haftalik</option>
+                                <option value="monthly">Oylik</option>
+                            </select>
+                            <button class="hero__btn-style hero__btn">send</button>
+                        </form>
+                    </div>
+                    <div class="week__wrapper">
+                        <table class="week__table">
+                            <thead class="week__head">
+                            </thead>
+                        </table>
+                    </div>
+                    <ul class="hero__list list-unstyled">
+                    </ul>
+               
+                </div> 
+
+            </div>
+        </div>
+        <section class="week">
+            <div class="container">
+           
+            </div>
+        </section>
+    </main>
+    <template class="week__template">
+        <tr class="week__row-list">
+            <th class="week__day-style week__day"></th>
+            <th class="week__style week__morning"></th>
+            <th class="week__style week__sun"></th>
+            <th class="week__style week__noon-time"></th>
+            <th class="week__style week__after-noon"></th>
+            <th class="week__style week__sunset"></th>
+            <th class="week__style week__evening"></th>
+            <th class="week__date-style week__date"></th>
+        </tr>
+    </template>
+    <template class="js-template">
+        <li class="hero__item">
+            <h3 class="hero__subtitle">Tong</h3>
+            <time class="hero__time hero__time--tong"></time>
+        </li>
+        <li class="hero__item">
+            <h3 class="hero__subtitle warning">Quyosh</h3>
+            <time class="hero__time hero__time--quyosh"></time>
+        </li>
+        <li class="hero__item">
+            <h3 class="hero__subtitle warning">Peshin</h3>
+            <time class="hero__time hero__time--peshin"></time>
+        </li>
+        <li class="hero__item">
+            <h3 class="hero__subtitle warning">Asr</h3>
+            <time class="hero__time hero__time--asr"></time>
+        </li>
+        <li class="hero__item">
+            <h3 class="hero__subtitle warning">Shom</h3>
+            <time class="hero__time hero__time--shom"></time>
+        </li>
+        <li class="hero__item">
+            <h3 class="hero__subtitle">Hufton</h3>
+            <time class="hero__time hero__time--hufton"></time>
+        </li>
+    </template>
+    <script src="./main.js"></script>
+</body>
+</html>

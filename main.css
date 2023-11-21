@@ -1,0 +1,188 @@
+:root {
+    /* --img-bgi:; */
+    --header--background-color:#ffeec9;
+    --background--liner: linear-gradient(0deg, #ffeec9 10%, #ffaf02 64%);;
+    --body-background-color:#ffeec9;
+    --text-color:#ff9d01;
+    --line-color:#ff9d01;
+    --date-color:#000;
+    --num-color:#0f277d;
+    --shodow-color:#ffa90033;
+    --week-color:#5d00ad;
+    --last-date-color:#107d0f;
+}
+.darkmood-theme {
+    --header--background-color:#49007a;;
+    --background--liner: linear-gradient(180deg, #49007a 50%, #000000c8 92%);;
+    --body-background-color:#000000;
+    --text-color:#fff;
+    --line-color:#49007a;
+    --date-color:#fff;
+    --num-color:#fff;  
+    --shodow-color:#9600ff33;
+    --week-color:#ff9d01;
+    --last-date-color:#49007a;
+
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: var(--body-background-color);
+    transition:background  0.2s;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+.sait-header {
+    background: var(--header--background-color);
+    background: var(--background--liner);
+    transition:background 5s;
+    margin-bottom: 0;
+}
+.sait-header__img {
+    width: 80px;
+    height: 80px;
+}
+.sait-second__img {
+    display: none;
+    width: 80px;
+    height: 80px; 
+}
+
+.nav__darkmood {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    
+}
+.nav__item {
+    color: var(--date-color);
+}
+.nav__link {
+    color: var(--date-color);
+}
+.dark__moon {
+    position: relative;
+    top: calc(50% - 15px);
+    left: calc(50% - 9px);
+    width: 20px;
+    height: 20px;
+}
+.hero {
+    transition:background 1s;
+}
+.hero__wrapper {
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-radius: 20px;
+}
+.hero__new--date {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    color: var(--text-color);
+}
+.hero__title-region {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    color:var(--text-color);
+    text-shadow:#ffaa00 1px 0 40px;
+}
+.hero__new--day {
+    color: var(--text-color);
+    font-family: cursive;
+    font-size: 40px;
+}
+.hero__locaiton--style {
+    font-family: cursive;
+    font-size: 16px;
+    background-color: #2f2929e1;
+    color: #fff;
+    border: 2px solid var(--line-color);
+    border-radius: 10px;
+    outline: none;
+}
+.hero__date--style {
+    font-family: cursive;
+    font-size: 16px;
+    background-color: #2f2929e1;
+    color: #fff;
+    border: 2px solid var(--line-color);
+    border-radius: 10px;
+    outline: none;
+}
+.hero__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid var(--line-color);
+    box-shadow: 0px -1px 92px 40px var(--shodow-color) inset;
+    /* box-shadow: 0px -1px 92px 40px #ffa90033 inset; */
+    border-radius: 50px;
+}
+.hero__subtitle {
+    font-family: cursive;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--week-color);
+}
+.hero__time {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--date-color);
+}
+
+.hero__btn-style  {
+    width: 100px;
+    padding: 9px;
+    font-size: 16px;
+    background-color: #2f2929e1;
+    color: #fff;
+    border: 2px solid var(--line-color);
+    border-radius: 10px;
+}
+.week__table {
+    display: block;
+    padding-bottom: 60px;
+    
+}
+
+.week__day-style {
+    background-color: var(--text-color);
+    color: #000;
+}
+.week__date-style {
+    background-color: var(--last-date-color);
+    color: #fff;
+}
+.week__style {
+    color: var(--num-color);
+}
+th{
+    width: 200px;
+    padding: 10px;
+    border: 2px solid var(--line-color);
+    
+}
