@@ -128,23 +128,20 @@ elForm.addEventListener("submit", evt => {
         elList.style.display = "flex"
         elWeekList.style.display = "none"
         elList.innerHTML = ""
+        apiFunc(`https://islomapi.uz/api/present/day?region=${elSelectLocationVal}`)
     }
     if (elSelectDateVal == "week") {   
         elList.style.display = "none"
         elWeekList.style.display = "block"
         elList.innerHTML = ""
-        weekDay(`https://islomapi.uz/api/present/${elSelectDateVal}?region=Toshkent`);
+        weekDay(`https://islomapi.uz/api/present/week?region=${elSelectLocationVal}`);
     }
     if (elSelectDateVal == "monthly") {   
         elList.style.display = "none"
         elWeekList.style.display = "block"
         elList.innerHTML = ""
-        weekDay(`https://islomapi.uz/api/${elSelectDateVal}?region=Toshkent&month=4`); 
+        weekDay(`https://islomapi.uz/api/monthly?region=${elSelectLocationVal}&month=4`); 
     }
     //////Select date end///////
     
-    //////Select region start///////
-    weekDay(`https://islomapi.uz/api/present/week?region=${elSelectLocationVal}`);
-    apiFunc(`https://islomapi.uz/api/present/day?region=${elSelectLocationVal}`)
-    //////Select region end///////
 })
